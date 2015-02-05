@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Match the following </title>
+
+<script src="js/jquery-1.11.2.min.js"></script>
+</script>
+<script>
+$(document).ready (function(){
+$('#main_con').html('<div id ="header" style="width:1430px;height:50px;color :#C00000;background-color:#EAEEABtext-align:center;border:2px solid; padding :10px"></div>');
+$('#header').html('<div id ="container_left" style="width:1410px;height:50px;color :#C00000;background-color:#EAEEAB;text-align:center;border:2px solid; padding :10px">MATCH THE FOLLOWING</div>');
+
+$('#main_con').append('<div id ="container_left1" style="width:600px;height:700px;color :#C00000;background-color:#EAEEAB;text-align:center;border:2px solid; padding :10px ;margin-top:30px">left container</div>');
+
+$('#container_left').append('<div id ="container_right" style="width:700px;height:975px;color :#C00000;background-color:#EAEEAB;text-align:center;border:2px solid ;margin-left:630px;margin-top:60px">right container</div>')
+
+$('#container_left1').html('<div id ="left_1" style="width:595px;height:75px;color :#C00000;background-color:#330036;text-align:center;border:2px solid">match 1</div>')
+
+$('#left_1').append('<div id ="left_2" style="width:595px;height:75px;color :#C00000;background-color:#330036;text-align:center;border:2px solid;  margin-top:80px;margin-top:70px;margin-right:20px">match 1</div>')
+
+$('#left_2').append('<div id ="left_3" style="width:595px;height:75px;color :#C00000;background-color:#330036;text-align:center;border:2px solid;margin-top:70px;margin-right:15px">match 3</div>')
+/*
+$('#left_3').append('<div id ="left_4" style="width:575px;height:75px;text-color :#B122016;background-color:#C00000;text-align:center;border:2px solid; padding :10px;margin-top:40px">match 1</div>')
+
+$('#left_4').append('<div id ="left_5" style="width:575px;height:75px;color :#B122016;background-color:#C00000;text-align:center;border:2px solid; padding :10px;margin-top:40px">match 1</div>')});
+
+*/
+
+$('#container_right').html('<div id ="right_1" style="width:615px;height:75px;color :#C00000;background-color:#EDE58C;text-align:center;border:2px solid;margin-top:10px;margin-left:10px">match 1</div>')
+
+$('#right_1').append('<div id ="right_2" style="width:615px;height:75px;color :#C00000;background-color:#330036;text-align:center;border:2px solid;  margin-top:80px;margin-top:70px;margin-right:20px">match 1</div>')
+
+$('#right_2').append('<div id ="right_3" style="width:615px;height:75px;color :#c33615;background-color:#C33615;text-align:center;border:2px solid;  margin-top:80px;margin-top:70px;margin-right:20px">match 1</div>')
+});
+
+
+
+
+</script>
+</head>
+
+
+
+
+<body>
+<div id="main_con" style ="width:1450px; height:1200px ;color: #330036;background:#EAEEAB">
+</div>
+</body>
+
+
+</html>
+
+
