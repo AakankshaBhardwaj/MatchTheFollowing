@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Match the following </title>
+
+<script src="js/jquery-1.11.2.min.js"></script>
+</script>
+<script>
+$(document).ready (function(){
+$('#main_con').html('<div id ="header" style="width:1430px;height:50px;color :#C00000;background:#B122016;text-align:center;border:2px solid; padding :10px"></div>');
+$('#header').html('<div id ="container_left" style="width:1410px;height:50px;color :#C00000;background:#B122016;text-align:center;border:2px solid; padding :10px">MATCH THE FOLLOWING</div>');
+
+$('#main_con').append('<div id ="container_left1" style="width:600px;height:700px;color :#C00000;background:#B122016;text-align:center;border:2px solid; padding :10px ;margin-top:30px">left container</div>');
+$('#container_left').append('<div id ="container_right" style="width:700px;height:975px;color :#C00000;background:#B122016;text-align:center;border:2px solid; padding :50px ;margin-left:630px;margin-top:65px">right container</div>')});
+</script>
+</head>
+
+
+
+
+<body>
+
+<div id="main_con" style ="width:1450px; height:1200px ;color: #330036;background:#EAEEAB">
+</div>
+</body>
+
+
+</html>
+
+
