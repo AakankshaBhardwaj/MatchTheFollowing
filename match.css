@@ -58,7 +58,8 @@
     margin-right:70px;
     border:2px solid ;
     margin-left:400px;
-    margin-top:95px
+    margin-top:95px;
+    font-size:20px;
 }
 #left_1 {
     width:300px;
@@ -106,6 +107,7 @@
     margin-right:15px ;
     margin-left:10px;
     text-align:center
+    padding:10px;
 
 }
 #right_2 {
