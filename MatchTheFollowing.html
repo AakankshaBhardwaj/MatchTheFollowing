@@ -3,110 +3,15 @@
 <title>Match the following </title>
 <script src="js/jquery-1.11.2.min.js"></script>
     <link rel="stylesheet" href="bootstrap/3.2.0/css/bootstrap.min.css">
-
     <script src="MatchTheFollowing/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
-
-
-<script>
-$(document).ready (function(){
-
-$('#main_con').html('<div id ="header" style="width:1270px;height:50px;color :#C00000;background-color:#C0210A;text-align:center;border:5px solid; padding :10px"></div>');
-$('#header').html('<div id ="container_left" style="width:1250px;height:50px;color :#C00000;background:#EAEEAB;text-align:center;border:2px solid; padding :10px;padding-bottom: 15px; font-style: oblique;font-size:30px;font-family:cursive "><strong>MATCH THE FOLLOWING</strong></div>');
-
-$('#main_con').append('<div id ="container_left1" style="width:600px;height:300px;color :#C00000;background:#EAEEAB;text-align:center;border:2px solid; padding :10px ;margin-top:30px ;margin-left: 10px"> <img src="CSC_0689.JPG.jpg" class="img-thumbnail" > left container</div>');
-
-$('#container_left').append('<div id ="container_right" style="width:600px;height:320px;color :#C00000;background:#EAEEAB;text-align:center;margin-right:10px; border:2px solid ;margin-left:630px;margin-top:50px">right container</div>')
-
-$('#container_left1').html('<div id ="left_1" class ="left_1" draggable="true"  ondrop="drop(event)" ondragstart="dragStart(event)" ondrag="dragging(event)" ondragover="allowDrop(event)"  style="width:595px;height:75px;color :#C00000;background:#EAEEAB;text-align:center;border:2px solid" >MULTIPLE INHERITANCE </div>')
-
-$('#container_left1').append('<div id ="left_2"  class="left_1" draggable="true"  ondrop="drop(event)" ondragover="allowDrop(event)" ondragstart="dragStart(event)" ondrag="dragging(event)" style="width:595px;height:75px;color :#C00000;background-color:#EAEEAB;text-align:center;border:2px solid;  margin-top:50px;margin-top:25px;margin-right:20px">KERNEL</div>')
-
-$('#container_left1').append('<div id ="left_3" class="left_1" draggable="true"  ondrop="drop(event)" ondragover="allowDrop(event)" ondragstart="dragStart(event)" ondrag="dragging(event)" containment =#right_2" snap="#right_2" snapMode = "both" snapTolerance ="30 " style="width:595px;height:75px;color :#C00000;background-color:#EAEEAB;text-align:center;border:2px solid;margin-top:25px;margin-right:15px">SUPER KEYWORD</div>')
-
-
-/*
-$('#left_3').append('<div id ="left_4" style="width:575px;height:75px;text-color :#B122016;background-color:#C00000;text-align:center;border:2px solid; padding :10px;margin-top:40px">match 1</div>')
-
-$('#left_4').append('<div id ="left_5" style="width:575px;height:75px;color :#B122016;background-color:#C00000;text-align:center;border:2px solid; padding :10px;margin-top:40px">match 1</div>')});
-
-
-ondrop="drop(event)" ondragover="allowDrop(event)">
-    <p ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">Drag me!</p>
-    </div>
-
-    <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>*/
-
-$('#container_right').html('<div id ="right_1"  draggable="true" ondrop="drop(event)" ondragover="allowDrop(event)" ondragstart="dragStart(event)" ondrag="dragging(event)" style="width:575px;height:75px;color :#C00000;background-color:#EAEEAB;text-align:center;border:2px solid;margin-top:20px;margin-right:15px ;margin-left:10px;text-align:center"><p>OPERATING SYSTEM</p></div>')
-
-
-    $('#container_right').append('<div id ="right_2" draggable="true" ondrop="drop(event)" ondragover="allowDrop(event)" ondragstart="dragStart(event)" ondrag="dragging(event)" style="width:575px;height:75px;color :#C00000;background-color:#EAEEAB;text-align:center;border:2px solid;margin-top:25px;margin-right:15px;margin-left:10px;border-style:double groove">JAVA</div>')
-
-
-    $('#container_right').append('<div id ="right_3" draggable="true" ondrop="drop(event)" ondragover="allowDrop(event)" ondragstart="dragStart(event)" ondrag="dragging(event)";tolerance="fit" style="width:575px;height:75px;color :#C00000;background-color:#EAEEAB;text-align:center;border:2px solid;margin-top:25px;margin-right:15px ;margin-left:10px;">C++</div>')
-
-
-
-    $('#main_con').append('<div id="footer"  style="width: 1200px;height: 100px;border:5px solid ;background-color:#C00000;color:#EAEEAB ;border-style:groove double;margin-top:50px; margin-left:30px"> footer</div>')
-    $('#main_con').append(' <button type="button" style=" width: 100px;height: 50px;font-family: fantasy;color:#EAEEAB;background-color:#C00000;font-style: oblique;margin-left: 330px ;margin-top:60px ">SCORE</button>' )
-    $('#main_con').append(' <button type="button" style=" width: 100px;height: 50px;font-family:fantasy; color:#EAEEAB ; background-color:#C00000;font-style: oblique;margin-left: 300px ;margin-top:60px ">RESET</button>' )
-
-    $('#footer').hide();
-    //$('#main_con').append('<div id ="footer1" style="width: 1225px;height: 50x;background-color:#C00000;color:#EAEEAB ;border:5px solid ;border-style: groove double;margin-top:60px;margin-right:30px;margin-bottom: 2px ;margin-left:30px"> footer 1</div>')
-
-});
-
-function dragStart(event) {
-    event.dataTransfer.setData("Text", event.target.id);
-
-
-}
-
-
-/*function dragging(event) {
-document.getElementById("demo").innerHTML = "The p element is being dragged";
-}*/
-function allowDrop(event) {
-    event.preventDefault();
-
-}
-function drop(event) {
-    event.preventDefault();
-    var data = event.dataTransfer.getData("Text");
-    event.target.appendChild(document.getElementById(data));
-    //document.getElementById("demo").innerHTML = "The p element was dropped";
-    $('#footer').slideDown(500);
-   // document.getElementById('footer').innerHTML=data.text();
-   // $('#footer').text($('data').text());
-
-    var v=$('#footer').text(data.valueOf());
-    var b= b.text()
-
-}
-
-
-
-
-</script>
-
-
-
-
+    <script src="match.js"></script>
+    <link rel =stylesheet href="match.css">
 </head>
-
-
-
-
 <body>
-<div id="main_con" style ="width:1300px; height:750px ;color:#c00000;background:#EAEEAB ;border-style:groove  double;border:5px solid ;">
-
-    <p id="demo"></p>
-
-
+<div id="main_con" >
 </div>
+
 </body>
-
-
 </html>
 
 
